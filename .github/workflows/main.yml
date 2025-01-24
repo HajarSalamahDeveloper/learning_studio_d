@@ -1,0 +1,41 @@
+on:
+  push:
+    tags:
+      - "v*"
+
+name: Build My Apps
+
+jobs:
+  build:
+    name: Build and Release new apk
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-java@v2
+        with:
+          distribution: "zulu"
+          java-version: "17"
+
+      # Parse the Flutter version from .fvmrc
+      - name: Read Flutter Version from .fvmrc
+        id: flutter-version
+        run: |
+          FLUTTER_VERSION=$(jq -r '.flutter' .fvmrc)
+          echo "FLUTTER_VERSION=$FLUTTER_VERSION" >> $GITHUB_ENV
+
+      # Use the parsed Flutter version
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "${{ env.FLUTTER_VERSION }}"
+          channel: "stable"
+
+      - run: flutter pub get
+      - run: flutter build apk --flavor prod -t lib/main_prod.dart --split-per-abi
+
+      - name: Push to Releases
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/apk/release/*"
+          tag: ${{ github.ref_name }}
+          token: ${{ secrets.TOKEN }}
