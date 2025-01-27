@@ -1,8 +1,8 @@
-import 'package:app_skeleton/shared/extensions/size_ex.dart';
+import 'package:learning_studio/shared/extensions/size_ex.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:app_skeleton/config/const/app_radius.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
+import 'package:learning_studio/config/const/app_radius.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
  
 class AppDraggableSheet extends StatefulWidget {
   final double? minHeight, maxHeight, initialChildSize;

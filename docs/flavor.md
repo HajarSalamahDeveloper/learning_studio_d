@@ -22,7 +22,7 @@
 
 2- go to `android/app/main/AndroidManifest.xml` 
 
-replace `android:label="app_skeleton"` with `android:label="@string/app_name"`
+replace `android:label="learning_studio"` with `android:label="@string/app_name"`
 
 3- add .vscode/launch.json
 

@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  static const Color primaryColor = Color(0xFF224EA2);
+  static const Color primaryColor =Color(0XFF218482);
+  // static const ColorScheme primaryColorScheme = ColorScheme(
+  //   primaryContainer: Color(0X991A1C1C),
+  //   secondaryContainer: Color(0XFFE24E47),
+  //   errorContainer: Color(0XFF224EA2),
+  //   onErrorContainer: Color(0X26020246),
+  //   onPrimary: Color(0XFF0E0E0E),
+  //   onPrimaryContainer: Color(0XFF7AB5B4),);
+
   static const Color primaryDisabledColor = Color(0x99224EA2);
   static const Color primaryDrawerColor = Color(0xFF112751);
   static const Color primaryGradientColor = Color(0xFFcdedf3);
@@ -52,4 +60,8 @@ abstract class AppColors {
   // DEV COLORS
   //these colors are used for development purposes
   static const Color devRedColor = Color.fromARGB(255, 255, 0, 0);
+
+
+
+
 }

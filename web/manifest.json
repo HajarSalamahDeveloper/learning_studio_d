@@ -1,6 +1,6 @@
 {
-    "name": "app_skeleton",
-    "short_name": "app_skeleton",
+    "name": "learning_studio",
+    "short_name": "learning_studio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

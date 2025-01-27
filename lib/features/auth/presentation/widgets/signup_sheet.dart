@@ -1,28 +1,28 @@
-import 'package:app_skeleton/shared/extensions/size_ex.dart';
-import 'package:app_skeleton/shared/extensions/string_ex.dart';
-import 'package:app_skeleton/shared/extensions/widget_ex.dart';
+import 'package:learning_studio/shared/extensions/size_ex.dart';
+import 'package:learning_studio/shared/extensions/string_ex.dart';
+import 'package:learning_studio/shared/extensions/widget_ex.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:app_skeleton/config/const/app_images.dart';
-import 'package:app_skeleton/config/const/app_radius.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/config/style/text_style.dart';
-import 'package:app_skeleton/features/auth/data/models/sign_up_model.dart';
-import 'package:app_skeleton/features/auth/presentation/cubits/signup/signin_cubit.dart';
-import 'package:app_skeleton/features/auth/presentation/widgets/auth_sheet.dart';
-import 'package:app_skeleton/features/auth/presentation/widgets/otp_sheet.dart';
-import 'package:app_skeleton/shared/enums/enums.dart';
-import 'package:app_skeleton/shared/widgets/app_divider_widget.dart';
-import 'package:app_skeleton/shared/widgets/app_text_field.dart';
-import 'package:app_skeleton/shared/widgets/app_txt_widget.dart';
-import 'package:app_skeleton/shared/widgets/buttons/buttons.dart';
-import 'package:app_skeleton/shared/widgets/countrycode_textfield_prefix.dart';
-import 'package:app_skeleton/shared/widgets/images/svg_image.dart';
-import 'package:app_skeleton/shared/widgets/modals/app_toast.dart';
-import 'package:app_skeleton/shared/widgets/modals/modals.dart';
+import 'package:learning_studio/config/const/app_images.dart';
+import 'package:learning_studio/config/const/app_radius.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
+import 'package:learning_studio/config/style/text_style.dart';
+import 'package:learning_studio/features/auth/data/models/sign_up_model.dart';
+import 'package:learning_studio/features/auth/presentation/cubits/signup/signin_cubit.dart';
+import 'package:learning_studio/features/auth/presentation/widgets/auth_sheet.dart';
+import 'package:learning_studio/features/auth/presentation/widgets/otp_sheet.dart';
+import 'package:learning_studio/shared/enums/enums.dart';
+import 'package:learning_studio/shared/widgets/app_divider_widget.dart';
+import 'package:learning_studio/shared/widgets/app_text_field.dart';
+import 'package:learning_studio/shared/widgets/app_txt_widget.dart';
+import 'package:learning_studio/shared/widgets/buttons/buttons.dart';
+import 'package:learning_studio/shared/widgets/countrycode_textfield_prefix.dart';
+import 'package:learning_studio/shared/widgets/images/svg_image.dart';
+import 'package:learning_studio/shared/widgets/modals/app_toast.dart';
+import 'package:learning_studio/shared/widgets/modals/modals.dart';
 
 // enum AccountType { individual, company }
 
@@ -61,12 +61,12 @@ class _SignupSheetState extends State<SignupSheet> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Row(children: [
-                SvgAsset(
-                  AppImages.addProfile,
-                  width: 40.h,
-                  height: 40.h,
-                ),
-                8.sizeW,
+                // SvgAsset(
+                //   AppImages.addProfile,
+                //   width: 40.h,
+                //   height: 40.h,
+                // ),
+                // 8.sizeW,
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

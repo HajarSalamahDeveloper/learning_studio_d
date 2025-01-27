@@ -1,5 +1,5 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:app_skeleton/core/logging/logger.dart';
+import 'package:learning_studio/core/logging/logger.dart';
 
 /// Service class for managing local notifications using FlutterLocalNotificationsPlugin.
 class LocalNotificationService {

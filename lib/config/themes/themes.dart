@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app_skeleton/config/const/app_values.dart';
+import 'package:learning_studio/config/const/app_values.dart';
 
 import '../style/app_colors.dart';
 

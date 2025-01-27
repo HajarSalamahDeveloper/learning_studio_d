@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:equatable/equatable.dart';
-import 'package:app_skeleton/core/di/locator.dart';
-import 'package:app_skeleton/core/services/shared_pref_services.dart';
-import 'package:app_skeleton/shared/enums/enums.dart';
+import 'package:learning_studio/core/di/locator.dart';
+import 'package:learning_studio/core/services/shared_pref_services.dart';
+import 'package:learning_studio/shared/enums/enums.dart';
 
 /// Represents a user model with essential attributes.
 class UserModel extends Equatable {

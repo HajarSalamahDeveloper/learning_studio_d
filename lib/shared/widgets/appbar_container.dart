@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:app_skeleton/config/const/app_images.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/shared/extensions/padding_ex.dart';
-import 'package:app_skeleton/shared/widgets/images/svg_image.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
 
 class AppBarContainer extends StatelessWidget {
   final Widget child;
@@ -23,7 +20,7 @@ class AppBarContainer extends StatelessWidget {
           ),
           child: child,
         ),
-        const SvgAsset(AppImages.mountain).paddingEnd(15.w)
+        // const SvgAsset(AppImages.mountain).paddingEnd(15.w)
       ],
     );
   }

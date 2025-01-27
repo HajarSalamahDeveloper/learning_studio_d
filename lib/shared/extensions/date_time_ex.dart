@@ -1,5 +1,5 @@
-import 'package:app_skeleton/config/localizaion/localization_service.dart';
-import 'package:app_skeleton/core/di/locator.dart';
+import 'package:learning_studio/config/localizaion/localization_service.dart';
+import 'package:learning_studio/core/di/locator.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 /// Extension on [DateTime] to provide a human-readable "time ago" functionality.

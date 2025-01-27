@@ -1,4 +1,4 @@
-import 'package:app_skeleton/core/utils/file_utils.dart';
+import 'package:learning_studio/core/utils/file_utils.dart';
 import 'package:flutter/material.dart';
 
 /// Extension on [String?] to provide additional utility methods for nullable strings.

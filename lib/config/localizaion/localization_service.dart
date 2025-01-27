@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:app_skeleton/core/di/locator.dart';
-import 'package:app_skeleton/core/services/shared_pref_services.dart';
+import 'package:learning_studio/core/di/locator.dart';
+import 'package:learning_studio/core/services/shared_pref_services.dart';
 
 /// Enum representing supported locales.
 enum LocaleType {

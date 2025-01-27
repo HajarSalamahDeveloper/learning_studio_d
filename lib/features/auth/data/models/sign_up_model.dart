@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:app_skeleton/shared/enums/enums.dart';
+import 'package:learning_studio/shared/enums/enums.dart';
 
 class SignUpModel extends Equatable {
   final String phone;

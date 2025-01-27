@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// A service class for managing key-value storage using `SharedPreferences`.
@@ -83,7 +85,23 @@ class SharedPreferencesService {
   Future<bool> delete(String key) async {
     return _preferences.remove(key);
   }
+// Save object as JSON
+  Future<bool> saveObject(String key, Object object) async {
+    String jsonString = jsonEncode(object); // Convert the object to a JSON string
+    ////printData(jsonString.toString());
+    return await _preferences.setString(key, jsonString);
+  }
 
+  // Retrieve object from JSON
+  T? getObject<T>(String key, T Function(Map<String, dynamic>) fromJson) {
+    String? jsonString = _preferences.getString(key);
+    if (jsonString != null) {
+          ////printData(jsonString.toString());
+      Map<String, dynamic> json = jsonDecode(jsonString); // Decode JSON string
+      return fromJson(json); // Convert JSON to object
+    }
+    return null;
+  }
   /// Clears all data stored in `SharedPreferences`.
   /// 
   /// Returns `true` if the operation is successful.

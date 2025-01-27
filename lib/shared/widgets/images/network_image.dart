@@ -1,9 +1,9 @@
-import 'package:app_skeleton/shared/extensions/string_ex.dart';
+import 'package:learning_studio/shared/extensions/string_ex.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:app_skeleton/config/const/app_images.dart';
-import 'package:app_skeleton/config/const/app_radius.dart';
- import 'package:app_skeleton/shared/widgets/images/svg_image.dart';
+import 'package:learning_studio/config/const/app_images.dart';
+import 'package:learning_studio/config/const/app_radius.dart';
+ import 'package:learning_studio/shared/widgets/images/svg_image.dart';
 import 'package:shimmer/shimmer.dart';
 
 /// A widget that displays an image from a network URL with optional properties

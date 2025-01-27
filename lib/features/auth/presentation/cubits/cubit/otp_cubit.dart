@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app_skeleton/core/network/api_exception.dart';
-import 'package:app_skeleton/features/auth/data/repo/auth_repo.dart';
+import 'package:learning_studio/core/network/api_exception.dart';
+import 'package:learning_studio/features/auth/data/repo/auth_repo.dart';
 
 part 'otp_state.dart';
 

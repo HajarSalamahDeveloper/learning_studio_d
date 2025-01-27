@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:app_skeleton/config/const/app_radius.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/shared/widgets/animation/button_click_animation.dart';
+import 'package:learning_studio/config/const/app_radius.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
+import 'package:learning_studio/shared/widgets/animation/button_click_animation.dart';
 
 class BackBtn extends StatelessWidget {
   final IconData? icon;

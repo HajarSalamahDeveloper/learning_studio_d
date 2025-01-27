@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/core/services/routing/navigator_service.dart';
-import 'package:app_skeleton/shared/widgets/app_txt_widget.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
+import 'package:learning_studio/core/services/routing/navigator_service.dart';
+import 'package:learning_studio/shared/widgets/app_txt_widget.dart';
 
 /// Helper class for displaying various types of Snackbars.
 /// [note] pass the context whenever You can to avoid null context error

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/config/style/app_decoration.dart';
-import 'package:app_skeleton/config/style/text_style.dart';
-import 'package:app_skeleton/shared/widgets/app_icon_widget.dart';
-import 'package:app_skeleton/shared/widgets/app_txt_widget.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
+import 'package:learning_studio/config/style/app_decoration.dart';
+import 'package:learning_studio/config/style/text_style.dart';
+import 'package:learning_studio/shared/widgets/app_icon_widget.dart';
+import 'package:learning_studio/shared/widgets/app_txt_widget.dart';
 
 class AppListTileWidget extends StatelessWidget {
   final String title;

@@ -1,12 +1,12 @@
-import 'package:app_skeleton/shared/extensions/widget_ex.dart';
+import 'package:learning_studio/shared/extensions/widget_ex.dart';
 import 'package:flutter/material.dart';
-import 'package:app_skeleton/config/const/app_images.dart';
-import 'package:app_skeleton/config/style/text_style.dart';
-import 'package:app_skeleton/core/network/api_exception.dart';
+import 'package:learning_studio/config/const/app_images.dart';
+import 'package:learning_studio/config/style/text_style.dart';
+import 'package:learning_studio/core/network/api_exception.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
- import 'package:app_skeleton/shared/widgets/app_txt_widget.dart';
-import 'package:app_skeleton/shared/widgets/buttons/buttons.dart';
-import 'package:app_skeleton/shared/widgets/images/svg_image.dart';
+ import 'package:learning_studio/shared/widgets/app_txt_widget.dart';
+import 'package:learning_studio/shared/widgets/buttons/buttons.dart';
+import 'package:learning_studio/shared/widgets/images/svg_image.dart';
 
 /// Use this Widget when you have error in your app
 class AppErrorWidget extends StatelessWidget {

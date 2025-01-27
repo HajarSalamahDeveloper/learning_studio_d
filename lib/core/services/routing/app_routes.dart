@@ -1,8 +1,8 @@
-import 'package:app_skeleton/features/auth/presentation/screen/auth_screen.dart';
+import 'package:learning_studio/features/auth/presentation/screen/auth_screen.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
-import 'package:app_skeleton/core/logging/logger.dart';
-import 'package:app_skeleton/features/splash/presentation/screen/splash_screen.dart';
+import 'package:learning_studio/core/logging/logger.dart';
+import 'package:learning_studio/features/splash/presentation/screen/splash_screen.dart';
  
 import 'navigator_service.dart';
 

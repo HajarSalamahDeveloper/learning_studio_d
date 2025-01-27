@@ -1,5 +1,5 @@
-import 'package:app_skeleton/config/localizaion/localization_service.dart';
-import 'package:app_skeleton/core/di/locator.dart';
+import 'package:learning_studio/config/localizaion/localization_service.dart';
+import 'package:learning_studio/core/di/locator.dart';
 
 init() async {
   await setUpLocator( );

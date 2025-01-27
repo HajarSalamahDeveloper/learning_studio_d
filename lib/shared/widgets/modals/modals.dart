@@ -2,9 +2,9 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/shared/widgets/buttons/buttons.dart';
-import 'package:app_skeleton/shared/widgets/modals/app_bottomsheet.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
+import 'package:learning_studio/shared/widgets/buttons/buttons.dart';
+import 'package:learning_studio/shared/widgets/modals/app_bottomsheet.dart';
 
 class AppModals {
   static Future showBottomSheet(

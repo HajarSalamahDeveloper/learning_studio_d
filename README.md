@@ -1,3 +1,3 @@
-# app_skeleton
+# learning_studio
 
 A new Flutter project.

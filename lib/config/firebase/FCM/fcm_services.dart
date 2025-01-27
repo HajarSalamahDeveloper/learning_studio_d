@@ -1,8 +1,8 @@
-import 'package:app_skeleton/config/const/app_values.dart';
+import 'package:learning_studio/config/const/app_values.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:app_skeleton/config/local_notifications/local_notifications.dart';
-import 'package:app_skeleton/core/logging/logger.dart';
+import 'package:learning_studio/config/local_notifications/local_notifications.dart';
+import 'package:learning_studio/core/logging/logger.dart';
 
 /// Service class for handling Firebase Cloud Messaging (FCM) integration.
 class FCMService {

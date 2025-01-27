@@ -1,4 +1,4 @@
-import 'package:app_skeleton/config/flavors/flavor_config.dart';
+import 'package:learning_studio/config/flavors/flavor_config.dart';
 
 abstract class ApiEndpoints {
   static final String baseUrl = FlavorConfig.instance.baseUrl;

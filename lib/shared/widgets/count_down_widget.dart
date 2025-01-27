@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:app_skeleton/config/style/text_style.dart';
-import 'package:app_skeleton/core/logging/logger.dart';
+import 'package:learning_studio/config/style/text_style.dart';
+import 'package:learning_studio/core/logging/logger.dart';
 
 /// A countdown timer widget that displays remaining time in minutes and seconds.
 /// The timer can be started, stopped, and reset.

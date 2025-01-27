@@ -1,4 +1,4 @@
-import 'package:app_skeleton/core/logging/logger.dart';
+import 'package:learning_studio/core/logging/logger.dart';
 import 'api_exception.dart';
 
 /// A generic class to represent the result of an operation, 

@@ -55,8 +55,7 @@ class Logger {
       case LogType.notification:
         return '\x1B[36m'; // Cyan
       case LogType.log:
-      default:
-        return '\x1B[33m'; // Yellow
+      return '\x1B[33m'; // Yellow
     }
   }
 

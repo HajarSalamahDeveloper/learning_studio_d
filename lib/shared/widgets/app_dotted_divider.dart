@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
 
 class DottedDivider extends StatelessWidget {
   final double rectangleWidth;

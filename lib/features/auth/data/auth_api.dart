@@ -1,7 +1,7 @@
-import 'package:app_skeleton/core/network/api_endpoints.dart';
-import 'package:app_skeleton/core/network/dio_client.dart';
-import 'package:app_skeleton/core/network/result.dart';
-import 'package:app_skeleton/features/auth/data/models/sign_up_model.dart';
+import 'package:learning_studio/core/network/api_endpoints.dart';
+import 'package:learning_studio/core/network/dio_client.dart';
+import 'package:learning_studio/core/network/result.dart';
+import 'package:learning_studio/features/auth/data/models/sign_up_model.dart';
 
 class AuthApi {
   final DioClient _client;

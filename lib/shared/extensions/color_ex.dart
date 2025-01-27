@@ -46,5 +46,5 @@ extension ColorEx on Color {
   /// Calculates the brightness of the color.
   ///
   /// Returns a double value representing the brightness of the color.
-  double _getBrightness() => (red * 299 + green * 587 + blue * 114) / 1000;
+  double _getBrightness() => (r * 299 + g * 587 + b * 114) / 1000;
 }

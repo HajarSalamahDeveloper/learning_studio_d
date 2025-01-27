@@ -1,10 +1,10 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:app_skeleton/core/logging/logger.dart';
-import 'package:app_skeleton/core/network/api_exception.dart';
-import 'package:app_skeleton/core/network/respnse_model.dart';
-import 'package:app_skeleton/core/network/result.dart';
-import 'package:app_skeleton/features/auth/data/models/sign_up_model.dart';
-import 'package:app_skeleton/shared/models/user_model.dart';
+import 'package:learning_studio/core/logging/logger.dart';
+import 'package:learning_studio/core/network/api_exception.dart';
+import 'package:learning_studio/core/network/respnse_model.dart';
+import 'package:learning_studio/core/network/result.dart';
+import 'package:learning_studio/features/auth/data/models/sign_up_model.dart';
+import 'package:learning_studio/shared/models/user_model.dart';
 
 import '../auth_api.dart';
 

@@ -1,10 +1,10 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app_skeleton/core/di/locator.dart';
-import 'package:app_skeleton/core/network/api_exception.dart';
-import 'package:app_skeleton/core/services/shared_pref_services.dart';
-import 'package:app_skeleton/features/auth/data/repo/auth_repo.dart';
+import 'package:learning_studio/core/di/locator.dart';
+import 'package:learning_studio/core/network/api_exception.dart';
+import 'package:learning_studio/core/services/shared_pref_services.dart';
+import 'package:learning_studio/features/auth/data/repo/auth_repo.dart';
  
 part 'login_state.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app_skeleton/core/logging/logger.dart';
+import 'package:learning_studio/core/logging/logger.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 

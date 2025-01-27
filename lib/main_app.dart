@@ -1,18 +1,18 @@
-import 'package:app_skeleton/shared/cubits/theme_cubit/theme_cubit.dart';
+import 'package:learning_studio/shared/cubits/theme_cubit/theme_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app_skeleton/config/localizaion/localization_service.dart';
-import 'package:app_skeleton/config/themes/themes.dart';
-import 'package:app_skeleton/core/di/locator.dart';
+import 'package:learning_studio/config/localizaion/localization_service.dart';
+import 'package:learning_studio/config/themes/themes.dart';
+import 'package:learning_studio/core/di/locator.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:app_skeleton/core/logging/logger.dart';
-import 'package:app_skeleton/core/services/routing/app_routes.dart';
-import 'package:app_skeleton/core/services/routing/navigator_service.dart';
-import 'package:app_skeleton/features/auth/presentation/cubits/login/login_cubit.dart';
-import 'package:app_skeleton/features/auth/presentation/screen/auth_screen.dart';
-import 'package:app_skeleton/providers.dart';
-import 'package:app_skeleton/shared/widgets/modals/app_toast.dart';
+import 'package:learning_studio/core/logging/logger.dart';
+import 'package:learning_studio/core/services/routing/app_routes.dart';
+import 'package:learning_studio/core/services/routing/navigator_service.dart';
+import 'package:learning_studio/features/auth/presentation/cubits/login/login_cubit.dart';
+import 'package:learning_studio/features/auth/presentation/screen/auth_screen.dart';
+import 'package:learning_studio/providers.dart';
+import 'package:learning_studio/shared/widgets/modals/app_toast.dart';
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});

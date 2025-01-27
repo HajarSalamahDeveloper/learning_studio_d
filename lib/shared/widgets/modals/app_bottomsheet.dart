@@ -1,7 +1,7 @@
-import 'package:app_skeleton/shared/extensions/context_ex.dart';
+import 'package:learning_studio/shared/extensions/context_ex.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
- import 'package:app_skeleton/shared/widgets/blur_widget.dart';
+ import 'package:learning_studio/shared/widgets/blur_widget.dart';
 
 class AppBottomsheet extends StatefulWidget {
   const AppBottomsheet({

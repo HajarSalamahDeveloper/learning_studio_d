@@ -1,11 +1,11 @@
-import 'package:app_skeleton/shared/extensions/size_ex.dart';
+import 'package:learning_studio/shared/extensions/size_ex.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/config/style/text_style.dart';
-import 'package:app_skeleton/features/auth/presentation/widgets/login_sheet.dart';
-import 'package:app_skeleton/features/auth/presentation/widgets/signup_sheet.dart';
-import 'package:app_skeleton/shared/widgets/app_txt_widget.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
+import 'package:learning_studio/config/style/text_style.dart';
+import 'package:learning_studio/features/auth/presentation/widgets/login_sheet.dart';
+import 'package:learning_studio/features/auth/presentation/widgets/signup_sheet.dart';
+import 'package:learning_studio/shared/widgets/app_txt_widget.dart';
 
 enum AuthSheetType { login, signup }
 

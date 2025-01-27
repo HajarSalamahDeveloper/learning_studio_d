@@ -1,18 +1,18 @@
-import 'package:app_skeleton/shared/extensions/padding_ex.dart';
-import 'package:app_skeleton/shared/extensions/size_ex.dart';
+import 'package:learning_studio/shared/extensions/padding_ex.dart';
+import 'package:learning_studio/shared/extensions/size_ex.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/config/style/text_style.dart';
-import 'package:app_skeleton/features/auth/presentation/widgets/auth_sheet.dart';
-import 'package:app_skeleton/features/auth/presentation/widgets/new_account.dart';
-import 'package:app_skeleton/shared/models/user_model.dart';
-import 'package:app_skeleton/shared/widgets/app_divider_widget.dart';
-import 'package:app_skeleton/shared/widgets/app_scaffold.dart';
-import 'package:app_skeleton/shared/widgets/app_txt_widget.dart';
-import 'package:app_skeleton/shared/widgets/buttons/buttons.dart';
-import 'package:app_skeleton/shared/widgets/modals/modals.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
+import 'package:learning_studio/config/style/text_style.dart';
+import 'package:learning_studio/features/auth/presentation/widgets/auth_sheet.dart';
+import 'package:learning_studio/features/auth/presentation/widgets/new_account.dart';
+import 'package:learning_studio/shared/models/user_model.dart';
+import 'package:learning_studio/shared/widgets/app_divider_widget.dart';
+import 'package:learning_studio/shared/widgets/app_scaffold.dart';
+import 'package:learning_studio/shared/widgets/app_txt_widget.dart';
+import 'package:learning_studio/shared/widgets/buttons/buttons.dart';
+import 'package:learning_studio/shared/widgets/modals/modals.dart';
 
 class AuthScreen extends StatefulWidget {
   static const routeName = 'auth';

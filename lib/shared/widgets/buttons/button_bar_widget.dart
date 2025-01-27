@@ -2,10 +2,10 @@ import 'package:animate_do/animate_do.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:app_skeleton/config/const/app_radius.dart';
-import 'package:app_skeleton/config/localizaion/localization_service.dart';
-import 'package:app_skeleton/config/style/app_colors.dart';
-import 'package:app_skeleton/core/di/locator.dart';
+import 'package:learning_studio/config/const/app_radius.dart';
+import 'package:learning_studio/config/localizaion/localization_service.dart';
+import 'package:learning_studio/config/style/app_colors.dart';
+import 'package:learning_studio/core/di/locator.dart';
 
 import '../../../config/style/text_style.dart';
 import '../app_txt_widget.dart';
