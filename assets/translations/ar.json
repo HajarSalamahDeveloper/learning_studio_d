@@ -10,6 +10,7 @@
     "email": "الإيميل",
     "password": "كلمة المرور",
     "confirm_password": "تأكيد كلمة المرور",
+    "OR": "- أو - ",
     "continue_with_facebook": "التسجيل باستخدام Facebook",
     "continue_with_google": "التسجيل باستخدام Google",
     "field_required": "هذا الحقل مطلوب",

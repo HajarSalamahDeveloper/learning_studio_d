@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learning_studio/shared/extensions/padding_ex.dart';
 import 'package:learning_studio/shared/widgets/app_text_field.dart';
 
 import '../../../../config/style/app_colors.dart';
@@ -23,34 +24,36 @@ class BuildAuthTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 11.0.h),
-      child: AppTextField(
-        controller: controller,
-        textInputAction: textInputAction,
-        onChanged: onChanged,
-        keyboardType: isEmail
-            ? TextInputType.emailAddress
-            : isPhone
-                ? TextInputType.phone
-                : TextInputType.text, 
-       
-        decoration: InputDecoration(
-          labelText: label,
-          hintText: hintText,
-          hintStyle: ,
-          labelStyle: Theme.of(context).textTheme.labelLarge,
-          filled: false,
-          border: const UnderlineInputBorder(
-              borderSide: BorderSide(color: AppColors.grayBorderColor)),
-          focusedBorder: const UnderlineInputBorder(
-              borderSide: BorderSide(color: AppColors.grayBorderColor)),
-          enabledBorder: const UnderlineInputBorder(
-              borderSide: BorderSide(color: AppColors.grayBorderColor)),
-              
+    return AppTextField(
+      controller: controller,
+      textInputAction: textInputAction,
+      onChanged: onChanged,
+      keyboardType: isEmail
+          ? TextInputType.emailAddress
+          : isPhone
+              ? TextInputType.phone
+              : TextInputType.text, 
+     
+      decoration: InputDecoration(
+        labelText: label,
+        hintText: hintText,
+        
+        hintStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
+          color: AppColors.grayBorderColor,
         ),
-        validator:validator ,
+        labelStyle:  Theme.of(context).textTheme.bodyMedium?.copyWith(
+          color: AppColors.grayBorderColor,
+        ),
+        filled: false,
+        border: const UnderlineInputBorder(
+            borderSide: BorderSide(color: AppColors.grayBorderColor)),
+        focusedBorder: const UnderlineInputBorder(
+            borderSide: BorderSide(color: AppColors.grayBorderColor)),
+        enabledBorder: const UnderlineInputBorder(
+            borderSide: BorderSide(color: AppColors.grayBorderColor)),
+            
       ),
-    );
+      validator:validator ,
+    ).paddingOnly(top: 22.0.h);
   }
 }

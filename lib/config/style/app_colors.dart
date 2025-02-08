@@ -42,7 +42,7 @@ abstract class AppColors {
   static const Color hintTextColor = Color(0xFF91918B);
   static const Color greyColor = Color(0xFFAEAEAE); //
   static const Color indicatorUnselectedColor = Color(0x33224EA2); //
-
+ static const Color fontColor400 = Color(0xFFA1A1A1);
   static const Color notchColor = Color(0x7FC9C9C9);
   static const Color headLineColor = Color(0xff525252);
 

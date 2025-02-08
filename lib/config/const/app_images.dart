@@ -6,6 +6,8 @@ abstract class AppImages {
   static const String logo = '${_base}logo_img.png';
   static const String background = '${_base}background_splash.png';
   static const String imgAuth = '${_base}img_auth.png';
+  static const String imgGoogle = '${_base}google.png';
+  static const String imgFacebook = '${_base}facebook.png';
  
   // static const String mountain = '${_base}mountain.svg';
   // static const String cart = '${_base}cart.svg';
