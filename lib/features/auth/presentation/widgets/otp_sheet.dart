@@ -218,6 +218,7 @@ class _OtpFieldState extends State<OtpField> {
         controller: TextEditingController(),
         autofocus: true,
         showCursor: false,
+        
         keyboardType: TextInputType.phone,
         onCompleted: widget.onCompleted,
         defaultPinTheme: _pinTheme(),

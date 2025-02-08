@@ -10,7 +10,8 @@ class AppTheme {
     fontFamily: AppValues.appFontFamily,
     brightness: Brightness.light,
     primaryColor: AppColors.primaryColor,
-    // scaffoldBackgroundColor: AppColor.backgroundColorLight,
+
+
     
      
   );
@@ -27,7 +28,7 @@ extension CustomTheme on ThemeData {
   Color get appPrimaryColor => brightness == Brightness.light
       ? AppColors.primaryColor
       : AppColors.whiteColor;
-  Color get frontColor => brightness == Brightness.light
+  Color get fontColor => brightness == Brightness.light
       ? AppColors.whiteColor
       : AppColors.blackColor;
 }

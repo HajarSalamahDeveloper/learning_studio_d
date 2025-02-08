@@ -30,10 +30,10 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _initialRoute() {
-    Future.delayed(const Duration(milliseconds: 5300), () {
+    Future.delayed(const Duration(milliseconds: 300), () {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         // context.pushReplacementNamed(!(UserModel.cache()?.isGuest ?? true) ? HomeScreen.routeName : AuthScreen.routeName);
-        // context.pushReplacementNamed( AuthScreen.routeName);
+        context.pushReplacementNamed( AuthScreen.routeName);
         Logger.debug('data');
       });
     });
@@ -59,11 +59,11 @@ class _SplashScreenState extends State<SplashScreen> {
             ) ,
             color: AppColors.whiteColor ),
             child: Stack(children: [
-              AnimatedPositionedDirectional(
+              PositionedDirectional(
                 top: 300.h,
                 start: 120.w,
-                curve: Curves.slowMiddle,
-                duration: const Duration(milliseconds: 900),
+                // curve: Curves.slowMiddle,
+                // duration: const Duration(milliseconds: 900),
                 child: Image.asset(AppImages.logo,),)
             ])
             // ))

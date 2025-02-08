@@ -13,6 +13,10 @@ class LoginCubit extends Cubit<LoginState> {
   static LoginCubit get(context) => BlocProvider.of(context);
   LoginCubit(this._repo) : super(LoginInitial());
   final TextEditingController phoneCTR = TextEditingController();
+  final TextEditingController fullName = TextEditingController();
+  final TextEditingController email = TextEditingController();  
+  final TextEditingController password = TextEditingController();
+
 
   login(String phoneNo) async {
     emit(LoginLoading());

@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 
 abstract class AppColors {
   static const Color primaryColor =Color(0XFF218482);
-  // static const ColorScheme primaryColorScheme = ColorScheme(
-  //   primaryContainer: Color(0X991A1C1C),
-  //   secondaryContainer: Color(0XFFE24E47),
-  //   errorContainer: Color(0XFF224EA2),
-  //   onErrorContainer: Color(0X26020246),
-  //   onPrimary: Color(0XFF0E0E0E),
-  //   onPrimaryContainer: Color(0XFF7AB5B4),);
+  static const Color primaryContainer =Color(0X991A1C1C);
+  static const Color secondaryContainer =Color(0XFFE24E47);
+  static const Color errorContainer =Color(0XFF0E0E0E);
+  static const Color onPrimary =Color(0XFF0E0E0E);
+  static const Color onPrimaryContainer =Color(0XFF7AB5B4);
 
   static const Color primaryDisabledColor = Color(0x99224EA2);
   static const Color primaryDrawerColor = Color(0xFF112751);
@@ -39,12 +37,14 @@ abstract class AppColors {
   static const Color avatarBgColor = Color(0xFFdee1e5);
 
   static const Color textfieldBorderColor = Color(0xFFFFFFFF);
-
+   static const Color grayBorderColor = Color(0x498D8C8C);
+/////////////////////////////////////////////////////////Text Colors//////////////////////////////////////////////////////////
   static const Color hintTextColor = Color(0xFF91918B);
   static const Color greyColor = Color(0xFFAEAEAE); //
   static const Color indicatorUnselectedColor = Color(0x33224EA2); //
 
   static const Color notchColor = Color(0x7FC9C9C9);
+  static const Color headLineColor = Color(0xff525252);
 
   static LinearGradient primaryBgGradient = const LinearGradient(
     colors: [primaryGradientColor, whiteColor],

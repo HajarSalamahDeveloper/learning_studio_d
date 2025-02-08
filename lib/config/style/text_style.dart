@@ -109,11 +109,21 @@ class AppTextStyle {
         fontSize: 20.h,
         fontWeight: FontWeight.w700,
       );
+  static TextStyle get s20W600p => TextStyle(
+        color: AppColors.primaryColor,
+        fontSize: 20.h,
+        fontWeight: FontWeight.w600,
+      );
 
   static TextStyle get s22W400p => TextStyle(
         color: AppColors.primaryColor,
         fontSize: 22.h,
         fontWeight: FontWeight.w400,
+      );
+  static TextStyle get s30W500p => TextStyle(
+        color: AppColors.whiteColor,
+        fontSize: 30.h,
+        fontWeight: FontWeight.w500,
       );
   static TextStyle get validationText => TextStyle(
         color: Colors.red[700],
@@ -131,7 +141,10 @@ class AppTextStyle {
         ? darkColor  
         : lightColor;
   }
-
+  // static Color getTextColor({Color appPrimaryColor}) {
+  //   return Theme.of(NavigationService.navigatorKey.currentContext!).appPrimaryColor ;
+  
+  // }
 //Map<String, Style> style = const {}
   static Map<String, Style> get htmlStyle => {
         '*': Style(fontFamily: AppValues.appFontFamily),
