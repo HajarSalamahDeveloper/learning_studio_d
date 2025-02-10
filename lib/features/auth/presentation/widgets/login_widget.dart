@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:learning_studio/features/auth/presentation/widgets/text_field_auth.dart';
 
 import '../../../../../core/di/locator.dart';
-import '../../cubits/signup/signin_cubit.dart';
+import '../cubits/login/login_cubit.dart';
 
-class SignUpWidget extends StatefulWidget {
-  const SignUpWidget({super.key});
+class LoginWidget extends StatefulWidget {
+  const LoginWidget({super.key});
 
   @override
-  State<SignUpWidget> createState() => _SignUpWidgetState();
+  State<LoginWidget> createState() => _LoginWidgetState();
 }
 
-class _SignUpWidgetState extends State<SignUpWidget> {
-    final cubit = sl<SignupCubit>();
+class _LoginWidgetState extends State<LoginWidget> {
+    final cubit = sl<LoginCubit>();
   final formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -63,20 +63,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
           },
          )
     ,
-      BuildAuthTextFormField(
-          controller: cubit.confirmPassword,
-          label: "confirm_password".tr(),
-          hintText  : "confirm_password".tr(),     
-          isEmail : false,
-          isPhone : false,
-          textInputAction: TextInputAction.done,
-          validator: (val) {
-            if (val!.isEmpty) {
-              return 'field_required'.tr();
-            }
-            return null;
-          },
-         )
+     
     
       ]);
   }

@@ -5,7 +5,7 @@ import 'package:learning_studio/shared/widgets/app_txt_widget.dart';
 
 import '../../../../../config/const/app_images.dart';
 import '../../../../../config/style/app_colors.dart';
-import '../../../../../config/style/text_style.dart';
+import '../../../../../shared/extensions/theme_contex.dart';
 import '../../../../../shared/widgets/images/asset_image.dart';
 
 class SocialLoginButtons extends StatelessWidget {
@@ -50,12 +50,15 @@ class SocialLoginButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ElevatedButton.icon(
+        
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          padding:  EdgeInsets.symmetric(vertical: 14.h),
+          padding: EdgeInsets.zero,
+          // padding:  EdgeInsets.symmetric(vertical: 14.h),
+          minimumSize: Size(176.w, 36.h),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8.r),
-            side: const BorderSide(color: AppColors.fontColor400),
+            side: const BorderSide(color: AppColors.grayBorderColor),
           ),
           backgroundColor: AppColors.backgroundColor,
           elevation: 0,
@@ -63,11 +66,11 @@ class SocialLoginButton extends StatelessWidget {
         icon:AssetImageWidget(
           nameImage??"",
           width: 24.w,
-          height: 24.w,
+          height: 24.h,
         ),
         label:  TextWidget(
           label??"",
-          style: AppTextStyle.s12W300,
+          style: theme.textTheme.titleSmall?.copyWith(color: AppColors.fontColor400),
         ),
       ),
     );

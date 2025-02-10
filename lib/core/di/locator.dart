@@ -11,6 +11,8 @@ import 'package:learning_studio/features/auth/presentation/cubits/login/login_cu
 import 'package:learning_studio/features/auth/presentation/cubits/signup/signin_cubit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../features/auth/presentation/cubits/nav_auth_cubit/cubit/nav_auth_cubit.dart';
+
 final sl = GetIt.instance;
 Future<void> setUpLocator( ) async {
 //init services
@@ -26,4 +28,5 @@ Future<void> setUpLocator( ) async {
   sl.registerLazySingleton<LoginCubit>(() => LoginCubit(sl<AuthRepo>()));
   sl.registerLazySingleton<SignupCubit>(() => SignupCubit(sl<AuthRepo>()));
   sl.registerLazySingleton<OtpCubit>(() => OtpCubit(sl<AuthRepo>()));
+  sl.registerLazySingleton<NavAuthCubit>(() => NavAuthCubit());
 }

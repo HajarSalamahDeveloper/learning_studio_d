@@ -4,6 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:learning_studio/core/di/locator.dart';
 import 'package:learning_studio/features/auth/presentation/cubits/login/login_cubit.dart';
 
+import 'features/auth/presentation/cubits/nav_auth_cubit/cubit/nav_auth_cubit.dart';
+
 /*
 Adding all providers in this file is so wrong but it works.
 */
@@ -18,6 +20,9 @@ class Providers extends StatelessWidget {
     return MultiBlocProvider(providers: [
       BlocProvider(
         create: (context) => sl<LoginCubit>(),
+      ),
+      BlocProvider(
+        create: (context) => sl<NavAuthCubit>(),
       ),
       BlocProvider(
         create: (context) => sl<ThemeCubit>()..loadTheme(),

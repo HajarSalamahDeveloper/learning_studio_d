@@ -2,6 +2,7 @@ import 'package:learning_studio/shared/extensions/size_ex.dart';
 import 'package:flutter/material.dart';
 import 'package:learning_studio/config/style/app_colors.dart';
 import 'package:learning_studio/config/style/text_style.dart';
+import 'package:learning_studio/shared/extensions/theme_contex.dart';
  import 'package:learning_studio/shared/widgets/app_txt_widget.dart';
 
 class NewAccount extends StatelessWidget {
@@ -10,6 +11,7 @@ class NewAccount extends StatelessWidget {
   final String? actionText; 
   final TextStyle? promptStyle; 
   final TextStyle? actionStyle;
+   final bool isLogin;
 
   const NewAccount({
     super.key,
@@ -17,7 +19,7 @@ class NewAccount extends StatelessWidget {
     this.promptText,
     this.actionText,
     this.promptStyle,
-    this.actionStyle,
+    this.actionStyle, required this.isLogin,
   });
 
   @override
@@ -26,19 +28,24 @@ class NewAccount extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         TextWidget(
-          promptText ?? 'dont_have_account',
-          style: promptStyle ?? AppTextStyle.s14W300,
+          isLogin ?  promptText ?? "dont_have_account" :  promptText ??  "already_have_account",
+          style:  theme.textTheme.bodyMedium?.copyWith(
+              color: AppColors.fontColor400,)
         ),
         5.sizeW,
         InkWell(
           onTap: onTap,
           child: TextWidget(
-            actionText ?? 'create_account',
+            isLogin ?   actionText ?? "create_account" :   actionText ?? "sign_in",
             style: actionStyle ??
-                AppTextStyle.s16W400p.copyWith(
-                  color: AppColors.tertiaryColor,
-                  decoration: TextDecoration.underline,
-                ),
+            theme.textTheme.bodyMedium?.copyWith(
+              color: AppColors.scondaryColor,
+           
+            )
+                // AppTextStyle.s16W400p.copyWith(
+                //   color: AppColors.scondaryColor,
+                //   decoration: TextDecoration.underline,
+                // ),
           ),
         ),
       ],

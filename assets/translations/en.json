@@ -10,10 +10,14 @@
     "email": "Email",
     "password": "Password",
     "confirm_password": "Confirm Password",
+    "Enter":"Enter",
     "OR": "- OR - ",
     "continue_with_facebook": "Continue with Facebook",
     "continue_with_google": "Continue with Google",
     "field_required": "Field is required",
+    "dont_have_account" : " You don’t have an account?",
+    
+    "have_account" : "Already have an account?",
     "_AuthSheet": "-----------------------------",
     
     "_NewAccount": "-----------------------------",

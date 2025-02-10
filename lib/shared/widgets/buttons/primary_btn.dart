@@ -17,8 +17,11 @@ class PrimaryBtn extends StatefulWidget {
   final String? icon;
   final bool isAnimated;
   final bool disabled;
+  final TextStyle? styleText;
   const PrimaryBtn(
-      {super.key, this.text, this.color, this.borderRadius, this.onTap, this.width = double.infinity, this.height = 55, this.child, this.disabled = false, this.isAnimated = true, this.icon});
+      {super.key, this.text, this.color, this.borderRadius, this.onTap,
+       this.width = double.infinity, this.height = 55, this.child, 
+       this.disabled = false, this.isAnimated = true, this.icon, this.styleText});
 
   @override
   State<PrimaryBtn> createState() => _PrimaryBtnState();
@@ -77,7 +80,7 @@ class _PrimaryBtnState extends State<PrimaryBtn> {
                 child: TextWidget(
                   widget.text!,
                   textAlign: TextAlign.center,
-                  style: AppTextStyle.pButtonTextStyle,
+                  style: widget.styleText ?? AppTextStyle.pButtonTextStyle,
                 ),
               );
             }
