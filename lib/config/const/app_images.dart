@@ -8,8 +8,11 @@ abstract class AppImages {
   static const String imgAuth = '${_base}img_auth.png';
   static const String imgGoogle = '${_base}google.png';
   static const String imgFacebook = '${_base}facebook.png';
+  static const String manSmile = '${_base}smile_man.png';
+  static const String cardTestimg = '${_base}card_test1.png';
  
-  // static const String mountain = '${_base}mountain.svg';
+   static const String notfication = '${_svg}notfi.svg';
+   static const String cardTest = '${_svg}card_test.svg';
   // static const String cart = '${_base}cart.svg';
   // static const String trash = '${_base}trash.svg';
   // static const String notification = '${_base}notification.svg';

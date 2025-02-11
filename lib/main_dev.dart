@@ -23,8 +23,8 @@ await SystemChrome.setPreferredOrientations(
   );
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
-      statusBarColor: AppColors.primaryColor,
-      systemNavigationBarColor: AppColors.secondaryColor,
+      statusBarColor: AppColors.backgroundColor,
+      systemNavigationBarColor: AppColors.backgroundColor,
        
     ),
   );

@@ -5,7 +5,7 @@ class RouterService {
   RouterService()
       : router = GoRouter(
           navigatorKey: NavigationService.navigatorKey, // Key for GoRouter
-          initialLocation: SplashScreen.path,
+          initialLocation: HomeScreen.path,
           
           // AuthScreen.path,
           redirect: (context, state) {

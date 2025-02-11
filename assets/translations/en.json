@@ -12,6 +12,7 @@
     "confirm_password": "Confirm Password",
     "Enter":"Enter",
     "OR": "- OR - ",
+   
     "continue_with_facebook": "Continue with Facebook",
     "continue_with_google": "Continue with Google",
     "field_required": "Field is required",
@@ -28,6 +29,8 @@
     "_addAddressFirstTimeSheet": "-----------------------------",
     "_add_newAddress_Widget": "-----------------------------",
     "_homeTab": "-----------------------------",
+    "hello":"Hello,",
+    "User":"User",
      "_Dio Api Exception": "------------------------------",
     "connectionTimeout": "Connection Timeout",
     "sendTimeout": "Send Timeout",

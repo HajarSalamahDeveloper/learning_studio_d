@@ -26,6 +26,8 @@
     "_addAddressFirstTimeSheet": "-----------------------------",
     "_add_newAddress_Widget": "-----------------------------",
     "_homeTab": "-----------------------------",
+    "hello":"مرحباً,",
+    "User":"مستخدم",
     "_Dio Api Exception": "------------------------------",
     "connectionTimeout": "انتهت مهلة الاتصال",
     "sendTimeout": "انتهت مهلة الإرسال",

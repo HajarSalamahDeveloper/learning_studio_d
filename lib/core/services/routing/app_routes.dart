@@ -2,6 +2,7 @@ import 'package:learning_studio/features/auth/presentation/screen/auth_screen.da
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:learning_studio/core/logging/logger.dart';
+import 'package:learning_studio/features/home/presentation/screens/home.dart';
 import 'package:learning_studio/features/splash/presentation/screen/splash_screen.dart';
  
 import 'navigator_service.dart';
@@ -21,6 +22,12 @@ abstract class AppRoutes {
       path: SplashScreen.path,
       name: SplashScreen.routeName,
       builder: (context, state) => const SplashScreen(),
+    ),
+
+      GoRoute(
+      path: HomeScreen.path,
+      name: HomeScreen.routeName,
+      builder: (context, state) => const HomeScreen(),
     ),
     // GoRoute(
     //   path: AddressesScreen.path,

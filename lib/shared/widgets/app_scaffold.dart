@@ -75,21 +75,26 @@ class _ScaffoldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: showAppBar
-          ? AppBar(
-              title: Text(title ?? ''),
-              centerTitle: centerTitle,
-              actions: actions,
-            )
-          : null,
-      body: body,
-      extendBody: extendBody,
-      floatingActionButton: floatingActionButton,
-      bottomNavigationBar: bottomNavigationBar,
-      resizeToAvoidBottomInset: resizeToAvoidBottomInset,
-      backgroundColor: backgroundColor,
-      bottomSheet: bottomSheet,
+    return SafeArea(
+      
+      child: Scaffold(
+        
+        appBar: showAppBar
+            ? AppBar(
+                title: Text(title ?? ''),
+                centerTitle: centerTitle,
+                actions: actions,
+              )
+            : null,
+        body: body,
+        extendBody: extendBody,
+      
+        floatingActionButton: floatingActionButton,
+        bottomNavigationBar: bottomNavigationBar,
+        resizeToAvoidBottomInset: resizeToAvoidBottomInset,
+        backgroundColor: backgroundColor,
+        bottomSheet: bottomSheet,
+      ),
     );
   }
 }

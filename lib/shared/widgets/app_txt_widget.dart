@@ -34,6 +34,7 @@ class TextWidget extends StatelessWidget {
       textDirection: textDirection,
       maxLines: maxLines,
       overflow: overflow,
+      softWrap: true, 
     );
   }
 }
